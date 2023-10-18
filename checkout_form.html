@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+
+  <style>
+    td{
+       height: 90px;
+ 
+    }
+
+table{
+    background-color: #f2f2f2;
+    width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* height: 600px; */
+}
+.same{
+    width: 250px;
+    height: 30px;
+    /* border: 1px solid #ccc;
+    border-radius: 3px; */
+
+  }
+.cus_text{
+    width: 110px;
+    height: 30px;
+
+}
+  
+  .btn_submit {
+    background-color: #555555;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  }
+
+ 
+ 
+
+ 
+  </style>
+   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+   
+</head>
+<body>
+    
+    <center>
+    <form>
+        <h1> Checkout Form </h1>
+    <table>
+        <tr>
+                    <td colspan="2"> 
+                            <h3> Billing Address </h3>
+                    </td>
+                        
+                    <td colspan="2"> 
+                            <h3> Payment </h3>
+                    </td>
+        </tr>
+                    
+       
+        <tr> 
+                    <td colspan="2">
+                         <label for="full_name"> <i class="fa fa-user"></i> Full Name </label>               <br>
+                        <input type="text" name="full_name" id="full_name" class="full_name same" placeholder="John M.Doe">
+                    </td>
+                   
+                    <td colspan="2"> <label for="accepted_card"> Accepted Card </label> 
+                        <br>
+                        <img src="visapho.png" width="100" height="30"  alt="Accepted Card">
+                    </td>
+        </tr>
+        <tr>
+                    <td colspan="2"> 
+                    <label for="email"> Email </label> <br>
+                    <input type="email" name="email" id="email" class="email same" placeholder="john@example.com">
+                </td>
+                
+                <td colspan="2"> 
+                    <label for="card_name"> Name On Card </label> <br>
+                    <input type="text" name="card_name" id="card_name" class="card_name same" placeholder="John More Doe">
+                </td>
+        </tr>   
+        <tr>
+                <td colspan="2"> <label for="address"> Address </label> 
+                        <br>
+                    <input type="text" name="address" id="address" class="address same" placeholder="542 W.15th street">
+                </td>
+
+
+                <td colspan="2"> <label for="credit_card_no"> Credit Card Number</label> 
+                        <br>
+                    <input type="number" name="credit_card_no" id="credit_card_no" class="credit_card_no same" placeholder="">
+                </td>
+            </tr>  
+            <tr>
+                    <td colspan="2"> <label for="city"> City </label> 
+                        <br>
+                    <input type="text" name="city" id="city" class="city same" placeholder="New York">
+                    </td>
+                    <td colspan="2"> <label for="exp_month"> Exp Month </label> 
+                        <br>
+                    <input type="text" name="exp_month" id="exp_month" class="exp_month same" placeholder="January">
+                    </td>
+            </tr>
+            <tr>
+                    <td > <label for="state"> State </label> 
+                        <br>
+                    <input type="text" name="state" id="state" class="state cus_text" placeholder="NY">
+                    </td>
+
+                    <td> <label for="zip"> Zip </label> <br>
+
+                    <input type="text" name="zip" id="zip" class="zip cus_text" placeholder="0002">
+                    </td>
+                
+                    <td> <label for="exp_year"> Exp Year </label> <br>
+                    
+                    <input type="datet" name="exp_year" id="exp_year" class="exp_year cus_text" placeholder="2008">
+                    </td>
+
+                    <td> <label for="cvv"> CVV </label> <br>
+                        
+                    <input type="text" name="cvv" id="cvv" class="cvv cus_text" placeholder="0002">
+                    </td>
+            </tr>
+            
+            <tr>
+                <td colspan="4">
+                    <input type="checkbox" name="check" id="check" class="check" > 
+                    
+                    <label for="check"> Shipping address same as billing </label>    
+                
+                </td>
+                
+            </tr>
+            <tr>
+                    <td colspan="4"> 
+                       <button type="submit"  id="btn_submit" class="btn_submit">Continue to checkout</button>
+                        
+                    </td>
+            </tr>
+                
+
+
+
+
+    </table>
+</form>
+    </center>
+
+
+</body>
+</html>
